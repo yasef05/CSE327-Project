@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Login</title>
+    <link rel="stylesheet" href="patient-login-styles.css">
+</head>
+<body>
+    <header>
+        <h1>Hospital Name</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#doctors">Doctors</a></li>
+            <li><a href="#appointment">Book an Appointment</a></li>
+            <li><a href="#profile">Profile</a></li>
+        </ul>
+    </nav>
+
+    <div class="login-container">
+        <form class="login-form">
+            <h2>Patient Login</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Password:</label>
+            <div class="password-container">
+                <input type="password" id="password" name="password" required>
+                <button type="button" id="togglePassword">Show</button>
+            </div>
+            
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>Contact Information</p>
+    </footer>
+
+    <script>
+        document.getElementById('togglePassword').addEventListener('click', function () {
+            const passwordField = document.getElementById('password');
+            const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordField.setAttribute('type', type);
+            this.textContent = type === 'password' ? 'Show' : 'Hide';
+        });
+    </script>
+</body>
+</html>
