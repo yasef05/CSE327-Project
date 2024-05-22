@@ -96,7 +96,7 @@ footer {
 .password-container input {
     flex-grow: 1;
     padding: 10px;
-    margin-right: 10px; /* Space between the input and the button */
+    margin-right: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }

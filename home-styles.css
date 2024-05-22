@@ -2,6 +2,9 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
@@ -9,83 +12,91 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
-    margin-bottom: 0; /* Remove margin-bottom */
+    position: relative;
 }
 
-nav {
-    background-color: #333;
-    padding: 10px 0;
-    margin-bottom: 20px;
+.admin-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color:#333;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.admin-button:hover {
+    background-color: darkgrey;
+}
+
+.tabs {
     display: flex;
     justify-content: space-around;
-}
-
-nav ul li {
-    flex: 1;
-}
-
-nav ul li a {
-    display: block;
+    background-color: #444;
     padding: 10px 0;
+}
+
+.tabs a {
     color: white;
     text-decoration: none;
-    text-align: center;
+    padding: 10px 20px;
 }
 
-nav ul li a:hover {
-    background-color: #555;
+.tabs a:hover {
+    background-color: #666;
+    border-radius: 5px;
 }
 
-footer {
-    background-color: #f2f2f2;
-    padding: 20px;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    margin-bottom: 0; /* Remove margin-bottom */
-}
-
-.hospital-info {
+.content {
+    flex-grow: 1;
     display: flex;
-    align-items: center; /* Align items vertically centered */
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
-    margin-bottom: 20px;
 }
 
-.about {
-    flex: 2;
-    margin-left: 20px; /* Add margin to the left of the about section */
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px; 
+    width: 80%;
+    max-width: 1200px;
 }
 
 .mascot {
-    flex: 1;
-    margin-right: 20px; /* Add margin to the right of the mascot */
-}
-
-.top-doctors {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-.doctor {
-    flex: 1;
-    text-align: center;
-    margin: 0 10px;
-}
-
-.round-image {
-    border-radius: 50%;
     width: 150px;
     height: 150px;
-    object-fit: cover;
+    margin-right: 20px;
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+.doctors-section {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    max-width: 1200px;
+    margin-bottom: 40px; 
+}
+
+.doctor-profile {
+    text-align: center;
+}
+
+.doctor-profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }

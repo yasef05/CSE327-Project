@@ -3,50 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hospital Website</title>
+    <title>Hospital Home Page</title>
     <link rel="stylesheet" href="home-styles.css">
 </head>
 <body>
     <header>
         <h1>Hospital Name</h1>
+        <a href="admin.html" class="admin-button">Admin</a>
     </header>
-
-    <nav>
-        <ul>
-            <li><a href="#doctors">Doctors</a></li>
-            <li><a href="#appointment">Book an Appointment</a></li>
-            <li><a href="#profile">Profile</a></li>
-        </ul>
-    </nav>
-
-    <div class="hospital-info">
-        <div class="mascot">
-            <img src="Images/nsu.png"Mascot">
+    <div class="tabs">
+        <a href="doctors-list.html">Doctors</a>
+        <a href="book-appointment.html">Book an Appointment</a>
+        <a href="patient-dashboard.html">Profile</a>
+    </div>
+    <div class="content">
+        <div class="about-section">
+            <img src="Images/nsu.png" alt="Hospital Mascot" class="mascot">
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Proin ac eros ac urna tincidunt suscipit non ut odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Proin ac eros ac urna tincidunt suscipit non ut odio.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Proin ac eros ac urna tincidunt suscipit non ut odio.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Proin ac eros ac urna tincidunt suscipit non ut odio.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Proin ac eros ac urna tincidunt suscipit non ut odio.</p>
+            </div>
         </div>
-        <div class="about">
-            <h2>About Us</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac metus eget tortor rhoncus suscipit. Nullam id nisi nec libero vestibulum feugiat non at ligula. Vivamus tristique justo sit amet ex convallis consectetur.</p>
+        <div class="doctors-section">
+            <div class="doctor-profile">
+                <img src="Images/nsu.png" alt="Doctor 1">
+                <p>Dr. John Doe - Cardiologist</p>
+            </div>
+            <div class="doctor-profile">
+                <img src="Images/nsu.png" alt="Doctor 2">
+                <p>Dr. Jane Smith - Neurologist</p>
+            </div>
+            <div class="doctor-profile">
+                <img src="Images/nsu.png" alt="Doctor 3">
+                <p>Dr. Emily Johnson - Pediatrician</p>
+            </div>
         </div>
     </div>
-
-    <div class="top-doctors">
-        <div class="doctor">
-            <img src="Images/nsu.png" alt="Doctor 1" class="round-image">
-            <h3>Dr. John Doe</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac metus eget tortor rhoncus suscipit.</p>
-        </div>
-        <div class="doctor">
-            <img src="Images/nsu.png" alt="Doctor 2" class="round-image">
-            <h3>Dr. Jane Smith</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac metus eget tortor rhoncus suscipit.</p>
-        </div>
-        <div class="doctor">
-            <img src="Images/nsu.png" alt="Doctor 3" class="round-image">
-            <h3>Dr. Michael Johnson</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac metus eget tortor rhoncus suscipit.</p>
-        </div>
-    </div>
-
     <footer>
         <p>Contact Information</p>
     </footer>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book an Appointment</title>
+    <link rel="stylesheet" href="book-appointment.css">
+</head>
+<body>
+    <header>
+        <h1>Book an Appointment</h1>
+    </header>
+
+    <div class="content">
+        <form class="appointment-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="appointment-date">Date:</label>
+            <input type="date" id="appointment-date" name="appointment-date" required>
+
+            <label for="appointment-time">Time:</label>
+            <input type="time" id="appointment-time" name="appointment-time" required>
+
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="4" placeholder="Describe your issue here..."></textarea>
+
+            <button type="submit" class="book-appointment">Book Appointment</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>Contact Information</p>
+    </footer>
+</body>
+</html>
