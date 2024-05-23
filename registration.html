@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System - Registration</title>
+    <link rel="stylesheet" href="reg_css.css">
+</head>
+<body>
+    <div class="registration-container">
+        <h1>Registration</h1>
+        <form id="registration-form">
+            <label for="user-type">Register as:</label>
+            <select id="user-type" name="user-type" onchange="toggleUserType()">
+                <option value="patient">Patient</option>
+                <option value="admin">Admin</option>
+            </select>
+            
+            <div id="common-fields">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            
+            <div id="patient-fields" class="user-specific-fields">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age">
+                
+                <label for="medical-history">Medical History:</label>
+                <textarea id="medical-history" name="medical-history"></textarea>
+            </div>
+            
+            <div id="admin-fields" class="user-specific-fields" style="display: none;">
+                <label for="admin-code">Admin Code:</label>
+                <input type="text" id="admin-code" name="admin-code">
+            </div>
+            
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    <script src="reg_js
+.js"></script>
+</body>
+</html>
