@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System - Admin Dashboard</title>
+    <link rel="stylesheet" href="admindasboardcss.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Admin Dashboard</h2>
+        <ul>
+            <li><a href="#patients" onclick="showSection('patients')">Patients</a></li>
+            <li><a href="#appointments" onclick="showSection('appointments')">Appointments</a></li>
+            <li><a href="#doctors" onclick="showSection('doctors')">Doctors</a></li>
+            <li><a href="#reports" onclick="showSection('reports')">Reports</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <header>
+            <h1>Welcome, Admin</h1>
+        </header>
+        <section id="patients" class="content-section">
+            <h2>Patients Management</h2>
+            <button onclick="addPatient()">Add Patient</button>
+            <div id="patients-list"></div>
+        </section>
+        <section id="appointments" class="content-section">
+            <h2>Appointments Scheduling</h2>
+            <button onclick="scheduleAppointment()">Schedule Appointment</button>
+            <div id="appointments-list"></div>
+        </section>
+        <section id="doctors" class="content-section">
+            <h2>Doctors Management</h2>
+            <button onclick="addDoctor()">Add Doctor</button>
+            <div id="doctors-list"></div>
+        </section>
+        <section id="reports" class="content-section">
+            <h2>Reports</h2>
+            <button onclick="generateReport()">Generate Report</button>
+            <div id="reports-list"></div>
+        </section>
+    </div>
+    <script src="admindashboardjs.js"></script>
+</body>
+</html>
