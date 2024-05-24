@@ -1,4 +1,4 @@
-import mongoose from "mongoose"
+import mongoose from "mongoose";
 import validator from "validator";
 
 const messageSchema = new mongoose.Schema({
@@ -24,10 +24,10 @@ const messageSchema = new mongoose.Schema({
         maxLength: [11, "Phone Number Must Contain Exact 11 Digits!"],
     },
     message: {
-        type: String,
-        required: true,
-        minLength: [10, "Message Must Contain At Least 10 Characters!"],
-      },
-    });
-    
-    
+      type: String,
+      required: true,
+      minLength: [10, "Message Must Contain At Least 10 Characters!"],
+    },
+  });
+  
+  export const Message = mongoose.model("Message", messageSchema);
